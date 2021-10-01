@@ -1,6 +1,6 @@
 # ContextMenu
 
-一个简单哈用的右键菜单控件
+一个简单好用的右键菜单控件
 
 ## Features
 
