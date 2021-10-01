@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ContextMenu</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ContextMenu.css">
+</head>
+<body>
+<a href="https://www.baidu.com/">ContextMenu</a>
+<script type="text/javascript" src="js/ContextMenu.js"></script>
+<script>
+    const MENUS = [
+      {
+        name: 'new',
+        icon: 'file',
+        label: '新建',
+        children: [
+          {
+            name: 'file-word',
+            icon: 'file-word-o',
+            label: 'Word 文件',
+            action: function (evt, menu) {
+              console.log(evt, menu)
+              console.log('新建 Word 文件')
+            }
+          },
+          {
+            name: 'file-excel',
+            icon: 'file-excel-o',
+            label: 'Excel 文件',
+            action: function (evt, menu) {
+              console.log(evt, menu)
+              console.log('新建 Excel 文件')
+            }
+          },
+          {
+            name: 'file-ppt',
+            icon: 'file-powerpoint-o',
+            label: 'PowerPoint 文件',
+            action: function (evt, menu) {
+              console.log(evt, menu)
+              console.log('新建 PowerPoint 文件')
+            }
+          }
+        ]
+      },
+      {
+        name: 'divider',
+        isDivider: true
+      },
+      {
+        name: 'copy',
+        icon: 'copy',
+        label: '复制',
+        action: function (evt, menu) {
+          console.log(evt, menu)
+          console.log('复制')
+        }
+      },
+      {
+        name: 'paste',
+        icon: 'paste',
+        label: '粘贴',
+        action: function (evt, menu) {
+          console.log(evt, menu)
+          console.log('粘贴')
+        }
+      },
+      {
+        name: 'cut',
+        icon: 'cut',
+        label: '剪切',
+        action: function (evt, menu) {
+          console.log(evt, menu)
+          console.log('剪切')
+        }
+      },
+      {
+        name: 'divider',
+        isDivider: true
+      },
+      {
+        name: 'delete',
+        icon: 'trash',
+        label: '删除',
+        action: function (evt, menu) {
+          console.log(evt, menu)
+          console.log('删除')
+        }
+      }
+    ]
+
+    const contextmenu = new ContextMenu({
+      menus: MENUS
+    })
+
+    contextmenu.reload({
+      menus: MENUS
+    })
+</script>
+</body>
