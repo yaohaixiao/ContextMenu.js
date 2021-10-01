@@ -12,7 +12,7 @@
 
 ## Screen Shot
 
-[![图片](/img/screen-shot.png "ContextMenu.js")](https://github.com/yaohaixiao/ContextMenu.js)
+[![图片](https://github.com/yaohaixiao/ContextMenu.js/img/screen-shot.png "ContextMenu.js")](https://github.com/yaohaixiao/ContextMenu.js)
 
 ## Usage
 ```js
