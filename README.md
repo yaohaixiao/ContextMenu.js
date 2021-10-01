@@ -1,5 +1,5 @@
 # ContextMenu
-----
+
 一个简单哈用的右键菜单控件
 
 ## Features
@@ -10,8 +10,11 @@
 - 支持自定义图标
 - 调用简单
 
-## Usage
+## Screen Shot
 
+[![图片](/img/screen-shot.png "ContextMenu.js")](https://github.com/yaohaixiao/ContextMenu.js)
+
+## Usage
 ```js
 const MENUS = [
       {
